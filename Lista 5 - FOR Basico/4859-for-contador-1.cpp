@@ -1,9 +1,16 @@
-// Problema 4859: For - Contador 1
+#include <cstdio>
 
-#include <iostream>
-using namespace std;
-
-int main() {
+int main()
+{
+    double n;
+    int contador = 0;
     
+    for(int i = 0; i < 5; i++){
+        scanf("%le", &n);
+        if(n > 0)
+            contador++;
+    }
+    
+    printf("%d\n", contador);
     return 0;
 }

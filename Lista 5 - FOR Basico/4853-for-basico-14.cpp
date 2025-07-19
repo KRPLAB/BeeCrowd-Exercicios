@@ -1,9 +1,18 @@
-// Problema 4853: For - Básico 14
+#include <cstdio>
+#include <cstring>
 
-#include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
+    char mensagem[100];
+    int x;
+    
+    fgets(mensagem, sizeof(mensagem), stdin);
+    scanf("%d", &x);
+    
+    for(int i = 0; i < x; i++)
+        printf("%s", mensagem);
     
     return 0;
 }

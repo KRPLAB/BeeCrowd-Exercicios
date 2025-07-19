@@ -1,9 +1,18 @@
-// Problema 4849: For - Básico 10
+#include <cstdio>
 
-#include <iostream>
-using namespace std;
-
-int main() {
+int main(){
+    int x, y;
+    
+    scanf("%d %d", &x, &y);
+    if(y > x){
+        x = y + x;
+        y = x - y;
+        x = x - y;
+    }
+    
+    for(int i = x; i >= y; i--){
+        printf("%d\n", i);
+    }
     
     return 0;
 }

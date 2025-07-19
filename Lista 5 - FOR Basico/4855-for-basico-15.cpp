@@ -1,9 +1,13 @@
-// Problema 4855: For - Básico 15
+#include <cstdio>
 
-#include <iostream>
-using namespace std;
-
-int main() {
+int main()
+{
+    int n;
+    
+    for(int i = 0; i < 10; i++){
+        scanf("%d", &n);
+        printf("%d\n", n*2);
+    }
     
     return 0;
 }

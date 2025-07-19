@@ -1,9 +1,22 @@
-// Problema 4882: For - Média 2
+#include <cstdio>
 
-#include <iostream>
-using namespace std;
+int main(){
+	int n, valor, count;
+	double media = 0.0;
+	
+	scanf("%d", &n);
+	count = n;
+	for(int i = 0; i < n; i++){
+		scanf("%d", &valor);
+		if(valor > 0){
+			media += valor;
+		} else {
+			count--;
+		}
+	}
+	media /= count;
 
-int main() {
-    
-    return 0;
+	printf("A média foi %.1f\n", media);
+
+	return 0;
 }

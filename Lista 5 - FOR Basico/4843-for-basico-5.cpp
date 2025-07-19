@@ -1,9 +1,13 @@
-// Problema 4843: For - Básico 5
+#include <cstdio>
 
-#include <iostream>
-using namespace std;
-
-int main() {
+int main(){
+    int x;
     
+    scanf("%d", &x);
+    
+    for(int i = 0; i <= x; i++){
+        if(i%2 == 0)
+            printf("%d\n", i);
+    }
     return 0;
 }

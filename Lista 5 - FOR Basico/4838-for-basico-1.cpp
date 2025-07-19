@@ -1,9 +1,12 @@
-// Problema 4838: For - Básico 1
+#include <cstdio>
 
-#include <iostream>
-using namespace std;
+int main(){
+	int x;
 
-int main() {
-    
-    return 0;
+	scanf("%d", &x);
+
+	for(int i=0; i<=x; i++){
+		printf("%d\n",i);
+	}
+	return 0;
 }
